@@ -1,0 +1,15 @@
+import discord
+from discord.ext import commands
+import os
+
+bot = commands.Bot(command_prefix="!")
+
+@bot.event
+async def on_ready():
+    print(f"✅ Logged in as {bot.user}")
+
+@bot.command()
+async def ping(ctx):
+    await ctx.send("Pong!")
+
+bot.run(os.getenv(MTQxMjI1OTAwMjMwNTM1MTY4Mw.Gce3Fm.jAJzxyLPDveQT6HWOR5hHHy9stx8jWCE4x1Gio))
